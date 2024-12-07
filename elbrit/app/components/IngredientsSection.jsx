@@ -6,14 +6,14 @@ export default function IngredientsSection() {
   ]
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white px-4">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8">Our Ingredients</h2>
-        <div className="flex justify-center space-x-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {ingredients.map(ingredient => (
             <div 
               key={ingredient.id} 
-              className="p-6 border rounded-lg shadow-md w-64"
+              className="p-6 border rounded-lg shadow-md w-full"
             >
               <h3 className="text-xl font-semibold mb-4">{ingredient.name}</h3>
               <p className="text-gray-600">{ingredient.description}</p>

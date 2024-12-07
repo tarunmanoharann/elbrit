@@ -1,14 +1,19 @@
+import Image from 'next/image';
+
 export default function Navbar() {
     return (
-      <nav className="bg-white shadow-md py-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">Logo</div>
-          <ul className="flex space-x-6">
-            <li><a href="#home" className="hover:text-blue-500">Home</a></li>
-            <li><a href="#ingredients" className="hover:text-blue-500">Ingredients</a></li>
-            <li><a href="#news" className="hover:text-blue-500">News</a></li>
-          </ul>
+      <nav className="bg-white shadow-md py-6 h-[71px] flex items-center">
+        <div className="container mx-auto flex justify-between items-center px-6 w-[1864px]">
+          <div className="flex items-center ml-[200px]">
+            <Image 
+              src="/images/logo.png" 
+              alt="Logo" 
+              width={200} 
+              height={50} 
+              className="object-contain"
+            />
+          </div>
         </div>
       </nav>
     )
-  }
+}

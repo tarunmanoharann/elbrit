@@ -1,0 +1,51 @@
+.main{
+    margin: 10px;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.header {
+    background-color: #E2F5FB;
+    height: 700px;
+    max-height: 1120px;
+    /* max-height: fit-content; */
+    background-size: cover;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-top: 0px;
+  }
+  
+  .headerH1 {
+    color: #123456; /* Replace with your color */
+    font-family: Jost;
+font-size: 155px;
+font-weight: 700;
+line-height: 150px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+  }
+  
+@media (max-width:768px) {
+  .headerH1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    
+/* line-height: 100px; */
+  }
+  .header{
+    height: 1220px;
+    max-height: 1320px;
+  }
+}
+@media (max-width:1229px) {
+  .header{
+    max-height: 1300px;
+  }
+}

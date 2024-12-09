@@ -1,22 +1,21 @@
 {
-  "name": "elbrit",
+  "name": "elbrit-task",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^5.8.1",
-    "elbrit": "file:",
-    "lucide-react": "^0.468.0",
+    "elbrit-task": "file:",
     "next": "15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "css-loader": "^7.1.2",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
     "postcss": "^8",

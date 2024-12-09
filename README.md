@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Components Library
 
-## Getting Started
+This repository contains reusable, responsive React components styled using modular CSS. Each component is designed with best practices for responsiveness, accessibility, and reusability. Below is the detailed documentation of all components created in this project.
 
-First, run the development server:
+# Published link : https://ishaq-elbrit-task.netlify.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Components
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. **VerifiedComponent**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Description**:
+  - A visually appealing component with six child containers.
+  - Each child container includes:
+    - An image
+    - A heading
+    - A paragraph
+  - The child containers are slightly elevated above the background container.
 
-## Learn More
+- **Features**:
+  - Desktop:
+    - Displays three columns in a row.
+  - Mobile:
+    - Displays two columns in a row.
 
-To learn more about Next.js, take a look at the following resources:
+- **Files**:
+  - `src/components/VerifiedComponent.jsx`
+  - `src/styles/VerifiedComponent.module.css`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. **IngredientsComponent**
 
-## Deploy on Vercel
+- **Description**:
+  - Displays ingredients in two rows:
+    - **Row 1**: 3 items with varying widths.
+    - **Row 2**: 4 items with varying widths.
+  - Each item contains:
+    - A background image
+    - A heading
+    - A paragraph
+    - A "View More" link
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Features**:
+  - Desktop:
+    - Items are displayed in two rows (3 columns in the first row, 4 columns in the second).
+  - Mobile:
+    - Each item takes up the full width.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Files**:
+  - `src/components/IngredientsComponent.jsx`
+  - `src/styles/IngredientsComponent.module.css`
+
+---
+
+### 3. **LatestNewsComponent**
+
+- **Description**:
+  - A container with four parent containers.
+  - Each parent container includes:
+    - Two child containers with background images of varying heights.
+    - Each child container has two paragraphs overlaid on the image.
+
+- **Features**:
+  - Desktop:
+    - Displays four columns.
+  - Mobile:
+    - Displays only one parent container at a time.
+    - Each child container takes up full width.
+
+- **Files**:
+  - `src/components/LatestNewsComponent.jsx`
+  - `src/styles/LatestNewsComponent.module.css`
+
+---
+
+### 4. **ContactUsComponent**
+
+- **Description**:
+  - A background container with three inner containers.
+  - Each inner container includes:
+    - An image
+    - Two paragraphs, displayed side by side.
+
+- **Features**:
+  - Desktop:
+    - Items are displayed in a row.
+  - Mobile:
+    - Items are stacked vertically in a column.
+
+- **Files**:
+  - `src/components/ContactUsComponent.jsx`
+  - `src/styles/ContactUsComponent.module.css`
+
+---
+
+## Installation and Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/react-components-library.git

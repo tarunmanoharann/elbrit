@@ -1,0 +1,121 @@
+/* Main container */
+.container {
+    display: flex;
+   
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+   
+  }
+  
+  
+  /* Item styles */
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    min-height: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex-grow: 1;
+  }
+  .item1{
+    flex-basis: 40%;
+  }
+  
+
+
+  .item:hover {
+    transform: translateY(-5px);
+  }
+
+  .lastitem{
+    flex-basis: 10%;
+  }
+  
+  
+  /* Item heading */
+  .heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #003569;
+  }
+
+  .card1Heading1{
+    font-size: 16px;
+    color: #003569;
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.07999999821186066px;
+    text-align: left;
+    flex-basis: 40%;
+    }
+
+    .card1heading2{
+        font-family: Jost;
+font-size: 48px;
+font-weight: 600;
+line-height: 52px;
+letter-spacing: 0.07999999821186066px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #17414F;
+
+    }
+
+    .card1para{
+        font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.07999999821186066px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #727272;
+
+    }
+  
+  /* Item paragraph */
+  .paragraph {
+    color: #727272;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* View more link */
+  .viewMore {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#003569; 
+    text-decoration: underline;
+  }
+  
+  .viewMore:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .item {
+      flex-basis: 100%;
+    }
+    .lastitem{
+        display: none;
+    }
+  }
+  

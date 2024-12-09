@@ -1,0 +1,148 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    gap: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 900px;
+    margin-bottom: 20px;
+
+    
+  }
+  
+  .leftContainer {
+    order: 0;
+    flex-grow: 1;
+    align-content: end;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .smallHeading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .leftContainerH2 {
+    max-width: 270px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #17414F;
+  }
+  
+  .exploreButton {
+    background-color: #17414F; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    max-width: 190px;
+    border-radius: 30px;
+  }
+  
+  .middleContainer {
+    flex-grow: 1;
+    order: 1;
+    max-width: 390px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content:flex-end;
+    
+  }
+  
+  .imageBackground {
+    max-height: 390px;
+    margin-top: 0px;
+   background-color: #FFE9B5;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+  }
+  
+  .mainImage {
+    
+    position: relative;
+    top: -70px;
+  }
+  
+  .rightContainer {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+   
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .infoItemImg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .infoItemH3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #17414F;
+  }
+  
+  .infoItemP {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mainContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .middleContainer {
+      justify-content: center;
+      order: 0;
+      
+     
+    }
+  .leftContainer{
+    order: 1;
+  }
+  .exploreButton{
+    align-self: center;
+    width: 100%;
+  }
+    .infoItem {
+      flex-direction: column;
+      align-items: center;
+    }
+    .mainImage{
+      
+     position: relative;
+     top: -60px;
+    }
+    .imageBackground{
+      max-width: 250px;
+      max-height: 250px;
+      border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    }
+  }
+  

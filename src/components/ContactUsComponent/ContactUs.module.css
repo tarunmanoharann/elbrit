@@ -1,0 +1,81 @@
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: #17414F;
+    width: 100%;
+  }
+  .contactCont{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  .companyLogo{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .copyCont{
+    display: flex;
+  }
+  /* Contact Item */
+  .contactItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 400px;
+    gap: 1rem;
+    background-color: #215D72;
+    padding: 10px;
+    height: 100px;
+  }
+  
+  .imageContainer {
+    
+    background-position: center;
+    border-radius: 8px;
+  }
+  .img{
+    width: 50px;
+    height: 50px; /* Set a fixed height for the image container */
+    background-size: cover;
+  }
+  .textContainer {
+    width: 60%;
+    color: white;
+    
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: normal;
+    font-family: Jost;
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contactItem {
+      
+      width: 100%; /* Make items take full width on mobile */
+    }
+    .contactCont{
+        flex-direction: column;
+    }
+   .companyLogo{
+    flex-direction: column;
+   } 
+    
+  }
+  
